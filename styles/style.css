@@ -1,0 +1,49 @@
+:root {
+    --body-padding: 7px
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    margin: 30px var(--body-padding);
+    gap: 55%;
+}
+
+.get-started {
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.get-started-top {
+    background-color: #13183F;
+    display: inline;
+    margin-left: 35%;
+    vertical-align: middle;
+}
+
+.get-started-small {
+    padding: 15px 25px;
+}
+
+.logo {
+    max-height: 1.4rem;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+
+main {
+    padding: 0;
+    margin: 60px var(--body-padding);
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 40px;
+    color: #13183F;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    letter-spacing: 0.02rem;
+}
