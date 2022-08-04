@@ -1,18 +1,22 @@
 :root {
-    --body-padding: 7px
+    --body-padding: 9px;
+    --primary-gradient: linear-gradient(360deg, #F02AA6, #FF6F48);
+    --gray-color: #83869A;
 }
 
 body {
     font-family: sans-serif;
+    color: white;
+    background: linear-gradient(#FFFFFF, #F0F1FF 120%)
 }
 
 header {
-    margin: 30px var(--body-padding);
+    margin: 35px var(--body-padding);
     gap: 55%;
 }
 
 .get-started {
-    border-radius: 20px;
+    border-radius: 30px;
     color: white;
     font-weight: bold;
 }
@@ -22,6 +26,22 @@ header {
     display: inline;
     margin-left: 35%;
     vertical-align: middle;
+}
+
+.get-started-middle {
+    background: var(--primary-gradient)
+}
+
+.get-started-big {
+    width: 8rem;
+    text-align: center;
+    padding: 18px 15px;
+}
+
+.intro-container img {
+    margin-top: 25px;
+    padding: 0;
+    max-width: 24rem;
 }
 
 .get-started-small {
@@ -41,9 +61,48 @@ main {
 
 h1 {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #13183F;
     font-weight: bolder;
     font-size: 2.5rem;
     letter-spacing: 0.02rem;
+}
+
+h2 {
+    background: var(--primary-gradient);
+    padding: 2.2rem 2rem;
+    border-radius: 15px;
+    margin-top: -9px;
+}
+
+h3 {
+    color: #13183F;
+}
+
+h4 {
+    color: #F74780;
+}
+
+.intro-container p {
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    width: 22rem;
+    margin-bottom: 20px;
+    color: var(--gray-color);
+}
+
+.skill p {
+    color: var(--gray-color)
+}
+
+.skill {
+    margin: auto;
+    margin: 50px 0;
+    background: white;
+    border-radius: 20px;
+    padding: 0 18px 20px;
+}
+
+.skill img {
+    margin-top: -25px;
 }
