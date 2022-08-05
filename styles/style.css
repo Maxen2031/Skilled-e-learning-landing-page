@@ -5,29 +5,38 @@
     --footer-color: #13183F;
 }
 
+html{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 body {
     font-family: sans-serif;
     color: white;
-    background: linear-gradient(#FFFFFF, #F0F1FF 120%);
+    background: linear-gradient(#FFFFFF, #F0F1FF);
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     overflow-x: hidden;
     position: absolute;
     left: 0;
     top: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
     padding: 35px var(--body-padding) 0;
     position: relative;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .get-started {
     border-radius: 30px;
     color: white;
     font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .get-started-top {
@@ -58,6 +67,7 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 .intro-container img {
     margin-top: 25px;
     max-width: 30rem;
@@ -88,7 +98,7 @@ h1 {
     letter-spacing: 0.02rem;
 }
 
-h2 {
+.course-heading {
     background: var(--primary-gradient);
     padding: 2.2rem 2rem;
     border-radius: 15px;
@@ -109,6 +119,10 @@ h4 {
     width: 22rem;
     margin-bottom: 20px;
     color: var(--gray-color);
+}
+
+.skill-contianer{
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .skill p {
@@ -134,4 +148,51 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (min-width: 768px){
+    /* body{
+        background-color: red;
+    } */
+
+    .get-started-top {
+        right: 40px;
+    }
+
+    .intro-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .intro-container img {
+        content: url(../images/image-hero-tablet.png);
+        width: 40rem;
+        max-width: 40rem;
+        margin-top: -130px;
+        margin-left: auto;
+        margin-right: 10px
+    }
+
+    .skill-contianer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .skill{
+        width: 40%;
+        margin: 20px 0;
+    }
+
+    .course-heading {
+        width: 40%;
+        margin: 22px 0;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        overflow: hidden;
+    }
 }
