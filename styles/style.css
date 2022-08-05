@@ -1,19 +1,21 @@
 :root {
-    --body-padding: 9px;
+    --body-padding: 20px;
     --primary-gradient: linear-gradient(360deg, #F02AA6, #FF6F48);
     --gray-color: #83869A;
+    --footer-color: #13183F;
 }
 
 body {
     font-family: sans-serif;
     color: white;
-    background: linear-gradient(#FFFFFF, #F0F1FF 120%)
+    background: linear-gradient(#FFFFFF, #F0F1FF 120%);
+    padding: 0;
+    margin: 0;
 }
 
 header {
-    padding: 35px var(--body-padding);
-    gap: 55%;
-    background-color: red;
+    padding: 35px var(--body-padding) 0;
+    position: relative;
 }
 
 .get-started {
@@ -25,13 +27,20 @@ header {
 .get-started-top {
     background-color: #13183F;
     display: inline;
-    margin-left: 35%;
-    vertical-align: middle;
+    position: absolute;
+    top: 37%;
+    transform: translateY(50);
+    right: 10px;
 }
 
 .get-started-middle {
     background: var(--primary-gradient)
 }
+
+.get-started-bottom {
+    background: linear-gradient(#4851FF, #F02AA6);
+}
+
 
 .get-started-big {
     width: 8rem;
@@ -39,10 +48,15 @@ header {
     padding: 18px 15px;
 }
 
+.intro-container{
+    display: flex;
+    flex-direction: column;
+}
 .intro-container img {
+    margin: auto;
     margin-top: 25px;
     padding: 0;
-    max-width: 24rem;
+    max-width: 30rem;
 }
 
 .get-started-small {
@@ -106,4 +120,13 @@ h4 {
 
 .skill img {
     margin-top: -25px;
+}
+
+footer {
+    background-color: var(--footer-color);
+    padding: 30px 30px;;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
