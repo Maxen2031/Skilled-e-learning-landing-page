@@ -164,13 +164,17 @@ footer {
         flex-direction: row;
     }
 
+    h1 {
+        width: 30rem;
+    }
+
     .intro-container img {
         content: url(../images/image-hero-tablet.png);
         width: 40rem;
         max-width: 40rem;
-        margin-top: -130px;
-        margin-left: auto;
-        margin-right: 10px
+        position: absolute;
+        right: -260px;
+        top: -80px;
     }
 
     .skill-contianer {
@@ -178,6 +182,7 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         gap: 2rem;
+        margin-top: 240px;
     }
 
     .skill{
