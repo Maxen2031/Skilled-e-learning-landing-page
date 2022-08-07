@@ -222,13 +222,8 @@ footer {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 5rem;
         margin-top: 240px;
-    }
-
-    .course-heading {
-        width: 15%;
-        padding: 0 18px 20px;
     }
 
     .course-heading img{
@@ -239,9 +234,12 @@ footer {
 
     }
 
-    .skill{
+    .skill, .course-heading{
         width: 15%;
+        max-width: 300px;
         margin: 20px 0;
-        flex: 1 0 21%;
+        flex-basis: 30%;
+        padding: 0 18px 20px;
+        aspect-ratio: 1/1;
     }
 }
