@@ -107,11 +107,6 @@ h1 {
     margin-top: -9px;
 }
 
-.course-heading img{
-    opacity: 0;
-    margin-top: -25px;
-}
-
 h3 {
     color: #13183F;
 }
@@ -159,14 +154,27 @@ footer {
 
 .get-started-top:hover {
     background-color: #666CA3;
+    cursor: pointer;
 }
 
 .get-started-middle:hover {
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .get-started-bottom:hover {
     opacity: 0.5;
+    cursor: pointer;
+}
+
+h4:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.course-heading img{
+    opacity: 0;
+    display: none;
 }
 
 @media screen and (min-width: 768px){
@@ -205,24 +213,33 @@ footer {
         margin-top: 240px;
     }
 
-    .skill{
+    .skill, .course-heading{
         width: 40%;
         margin: 20px 0;
+        aspect-ratio: 1/1;
+        margin: 20px 0;
+        padding: 0 18px 20px;
     }
 
-    .course-heading {
-        width: 40%;
-        margin: 22px 0;
+    .course-heading img{
+        opacity: 0;
+        margin-top: -25px;
+    }
+
+    .course-heading h2{
+        width: 80%;
+        font-size: 2rem;
+        margin-top: 15%;
     }
 }
 
 @media screen and (min-width: 1024px){
     header {
-        margin: 0px 80px;
+        margin: 0px 40px;
     }
 
     main {
-        margin: 200px 100px;
+        margin: 200px 60px;
     }
 
     .intro-container img {
@@ -242,23 +259,20 @@ footer {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 5%;
         margin-top: 240px;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .course-heading img{
         margin-top: -25px;
     }
 
-    .course-heading h2{
-
-    }
-
     .skill, .course-heading{
-        width: 15%;
-        max-width: 300px;
+        width: 25%;
         margin: 20px 0;
-        flex-basis: 100%;
         padding: 0 18px 20px;
         aspect-ratio: 1/1;
     }
